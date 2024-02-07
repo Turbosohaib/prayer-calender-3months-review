@@ -42,7 +42,7 @@ function convertTo12HourFormat(time) {
   return `${String(hours).padStart(2, "0")}:${minutes} ${period}`;
 }
 
-let url = `http://api.aladhan.com/v1/calendar/2024/1?latitude=53.83333000&longitude=-1.83333000&method=2`;
+let url = `https://api.aladhan.com/v1/calendar/2024/1?latitude=53.83333000&longitude=-1.83333000&method=2`;
 
 // Making a fetch GET request
 fetch(url)
@@ -267,7 +267,7 @@ function handleInputChange(inputId) {
         break;
     }
 
-    let url = `http://api.aladhan.com/v1/calendar/${solarYearValue}/${solarMonthValue}?latitude=53.83333000&longitude=-1.83333000&method=2`;
+    let url = `https://api.aladhan.com/v1/calendar/${solarYearValue}/${solarMonthValue}?latitude=53.83333000&longitude=-1.83333000&method=2`;
 
     // Making a fetch GET request
     fetch(url)
