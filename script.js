@@ -42,7 +42,7 @@ function gregorianToHijri(dateObject) {
 }
 
 let masjidUsSunnahApi =
-  "https://masjid.connextar.com/?rest_route=/dpt/v1/prayertime&filter=year";
+  "http://masjid.connextar.com/?rest_route=/dpt/v1/prayertime&filter=year";
 
 fetch(masjidUsSunnahApi)
   .then((response) => {
